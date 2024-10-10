@@ -10,13 +10,11 @@ public class Main {
             array[i] = sc.nextInt();
         }
         for (int i = n - 1; i >= 0; i--) {
-            System.out.print(array[i]);
-            if (i > 0) {
-                System.out.print(" ");
+            System.out.print(array[i] + " ");
+
             }
 
         }
 
 
     }
-}
