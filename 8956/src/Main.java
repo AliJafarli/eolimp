@@ -11,7 +11,7 @@ public class Main {
         }
         int count = 0;
         for (int i = 0; i < n; i++) {
-            if (array[i] > 0) {
+            if (array[i] < 0) {
                 count++;
             }
         }
@@ -21,8 +21,8 @@ public class Main {
         } else {
             System.out.println(count);
 
-            for (int i = 0; i < n; i++) {
-                if (array[i] > 0) {
+            for (int i = n-1; i >= 0; i--) {
+                if (array[i] < 0) {
                     System.out.print(array[i] + " ");
                 }
 
